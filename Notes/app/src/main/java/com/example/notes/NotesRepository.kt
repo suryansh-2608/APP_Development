@@ -6,12 +6,12 @@ class NotesRepository(private val notesDAO: NotesDAO) {
 
     val allNotes: LiveData<List<Notes>> = notesDAO.getAllNotes()
 
-    suspend fun insert(notes: Notes){
-        notesDAO.insert(notes)
+    suspend fun insert(note: Notes){
+        notesDAO.insert(note)
     }
 
-    suspend fun delete(notes: Notes){
-        notesDAO.delete(notes)
+    suspend fun delete(note: Notes){
+        notesDAO.delete(note)
     }
 
 }
