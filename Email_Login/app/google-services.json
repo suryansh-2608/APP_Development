@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "575854419731",
+    "project_id": "email-login-d8afe",
+    "storage_bucket": "email-login-d8afe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575854419731:android:dd4d4a82e28c37cf6304e6",
+        "android_client_info": {
+          "package_name": "com.example.email_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575854419731-k3kt4g78jfol505g1mr4gdgppo4q1rfu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3iE48E4l_X_z7SNxNjcY2cINaOYMrBKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575854419731-k3kt4g78jfol505g1mr4gdgppo4q1rfu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
