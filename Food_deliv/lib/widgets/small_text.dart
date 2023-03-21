@@ -6,7 +6,7 @@ class SmallText extends StatelessWidget {
   double size;
   TextOverflow overflow;
   double height;
-  SmallText({Key? key, this.color = const Color(0xFFccc7c5),required this.text, this.overflow = TextOverflow.ellipsis, this.size=15, this.height=1.2}) : super(key: key);
+  SmallText({Key? key, this.color = const Color(0xFFccc7c5),required this.text, this.overflow = TextOverflow.ellipsis, this.size=12, this.height=1.2}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
