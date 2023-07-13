@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:saathi/feature_box.dart";
 import "package:saathi/pallete.dart";
 
 class HomePage extends StatefulWidget {
@@ -24,8 +25,8 @@ class _HomePageState extends State<HomePage> {
             children: [
               Center(
                 child: Container(
-                  height: 120,
-                  width: 120,
+                  height: 100,
+                  width: 100,
                   margin: const EdgeInsets.only(top: 4),
                   decoration: const BoxDecoration(
                     color: Pallete.assistantCircleColor,
@@ -34,7 +35,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
-                height: 123,
+                height: 103,
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(image: AssetImage('assets/images/virtualAssistant.png',
@@ -46,7 +47,7 @@ class _HomePageState extends State<HomePage> {
           ),
           // chat bubble
           Container(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               horizontal: 20,
               vertical: 10,
             ),
@@ -69,7 +70,7 @@ class _HomePageState extends State<HomePage> {
               child:  Text('Hola!! What can I do for you?', style: TextStyle(
                 fontFamily: 'Cera Pro',
                 color: Pallete.mainFontColor,
-                fontSize: 25,
+                fontSize: 20,
               ),),
             ),
           ),
@@ -84,13 +85,35 @@ class _HomePageState extends State<HomePage> {
             child: const Text('Here are a few features', style: TextStyle(
               fontFamily: 'Cera Pro',
               color: Pallete.mainFontColor,
-              fontSize: 20,
+              fontSize: 18,
               fontWeight: FontWeight.bold,
             ),),
           ),
           //Features list
-          
+          Column(
+            children: const [
+              FeatureBox(
+                  color: Pallete.firstSuggestionBoxColor,
+                headerText: 'ChatGPT',
+                descriptionText: 'A smarter way to stay organized and informed with ChatGPT',
+              ),
+              FeatureBox(
+                color: Pallete.secondSuggestionBoxColor,
+                headerText: 'Dall-E',
+                descriptionText: 'Get inspired and stay creative with your personal assistant powered by Dall-E',
+              ),
+              FeatureBox(
+                color: Pallete.thirdSuggestionBoxColor,
+                headerText: 'Smart Voice Assistant',
+                descriptionText: 'Get the best of both worlds with a voice assistant powered by Dall-E and ChatGPT',
+              ),
+            ],
+          )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.mic),
       ),
     );
   }
